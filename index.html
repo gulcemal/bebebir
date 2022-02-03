@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        .container {
+            display: flex;
+
+        }
+
+        .red {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+        }
+
+        .blue {
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+        }
+
+        .green {
+            background-color: green;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    Hangisi Kırmızı
+    <div class="container">
+        <div class="red"></div>
+        <div class="blue"></div>
+        <div class="green"></div>
+    </div>
+
+    <div id="mesaj"></div>
+
+
+    <script>
+
+        const red = document.getElementsByClassName("red")[0];
+        const blue = document.getElementsByClassName("blue")[0];
+        const green = document.getElementsByClassName("green")[0];
+        const mesaj = document.getElementById("mesaj");
+
+        console.log(red)
+
+        red.addEventListener("click", function () {
+            mesaj.innerHTML = "OLEEEEEEEEEEEEEEEE BİLDİN";
+        });
+
+        blue.addEventListener("click", function () {
+            mesaj.innerHTML = "TEKRRRRRRRRRRAAAAAAAAAAA R";
+        });
+
+        green.addEventListener("click", function () {
+            mesaj.innerHTML = "OLMADDDDDDDDDDDDDDDDDIIIIIIIIIII";
+        });
+
+    </script>
+
+</body>
+
+</html>
