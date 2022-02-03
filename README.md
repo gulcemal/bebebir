@@ -1,0 +1,2 @@
+# bebebir
+İlk kodlama denemem
